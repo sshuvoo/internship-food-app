@@ -4,7 +4,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#EEEFF0] md:pt-10 pt-4">
+    <header className="bg-[#EEEFF0] pt-4 md:pt-10">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
         <div>
           <h1 className="text-4xl font-bold">pti.</h1>
@@ -13,7 +13,7 @@ export default function Navbar() {
           <div className="relative">
             <input
               placeholder="Search Audiobook"
-              className="rounded-lg bg-[#FEFEFE] px-4 py-3 pl-11 focus:outline-none md:w-[400px] lg:w-[500px]"
+              className="w-[200px] rounded-lg bg-[#FEFEFE] px-4 py-3 pl-11 focus:outline-none sm:w-[300px] md:w-[400px] lg:w-[500px]"
             />
             <svg
               className="absolute left-4 top-1/2 -translate-y-1/2 fill-orange-500"
@@ -28,11 +28,11 @@ export default function Navbar() {
           <div className="relative">
             <button
               onClick={() => setOpen((pre) => !pre)}
-              className="flex w-28 items-center justify-between rounded-lg bg-[#FEFEFE] px-4 py-3 font-medium md:w-36 lg:w-48"
+              className="flex items-center justify-between rounded-lg bg-[#FEFEFE] px-4 py-3 font-medium sm:w-28 md:w-36 lg:w-48"
             >
               <span>MENU</span>
               <svg
-                className={`fill-orange-500 transition-all ${
+                className={`ml-1 fill-orange-500 transition-all sm:ml-0 ${
                   isOpen && "rotate-180"
                 }`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Navbar() {
               </svg>
             </button>
             <div
-              className={`absolute z-10 w-48 shadow-md transition-all duration-300 right-0 ${
+              className={`absolute right-0 z-10 w-48 shadow-md transition-all duration-300 ${
                 isOpen ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
