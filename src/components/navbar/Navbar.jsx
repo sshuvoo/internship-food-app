@@ -13,7 +13,7 @@ export default function Navbar() {
           <div className="relative">
             <input
               placeholder="Search Audiobook"
-              className="w-[200px] rounded-lg bg-[#FEFEFE] px-4 py-3 pl-11 focus:outline-none sm:w-[300px] md:w-[400px] lg:w-[500px]"
+              className="w-[180px] rounded-lg bg-[#FEFEFE] px-4 py-3 pl-11 focus:outline-none sm:w-[300px] md:w-[400px] lg:w-[500px]"
             />
             <svg
               className="absolute left-4 top-1/2 -translate-y-1/2 fill-orange-500"
